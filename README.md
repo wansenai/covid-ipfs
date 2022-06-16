@@ -1,2 +1,2 @@
-# covid-ipfs-demo
+# Covid IPFS Demo
 Ken Labs Dorahacks Match
