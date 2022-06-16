@@ -16,6 +16,8 @@ pub struct NucleicAcidsDto {
     pub phone: Option<String>,
     // 住址
     pub address: Option<String>,
+    // 时间
+    pub date: Option<String>,
     // 结果
     pub result: NucleicEnum,
 }
@@ -28,6 +30,7 @@ impl NucleicAcidsDto {
             sex: self.sex,
             phone: self.phone.clone(),
             address: self.address.clone(),
+            date: self.date.clone(),
             result: self.result.clone(),
         }
     }
