@@ -1,0 +1,8 @@
+[package]
+name = "summer-ipfs-demo"
+version = "0.1.0"
+edition = "2021"
+authors = [
+"James Zow <jameszow@163.com>",
+"Team <team@summeros.org>"
+]
