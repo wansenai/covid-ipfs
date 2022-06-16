@@ -1,4 +1,4 @@
-# Covid IPFS Demo
+# Covid IPFS
 Ken Labs Dorahacks Match
 
 ### Solving the problem of nucleic acid detection results during epidemic based on IPFS
