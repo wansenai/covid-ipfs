@@ -1,20 +1,5 @@
-[package]
-name = "covid-ipfs"
-version = "0.1.0"
-edition = "2021"
-authors = [
-"James Zow <jameszow@163.com>",
-"Team <team@summeros.org>"
+[workspace]
+members = [
+  "covid-ipfs-server",
+  "covid-ipfs-client/app"
 ]
-
-[dependencies]
-ipfs-api-backend-actix = "0.5"
-
-http = "0.2"
-serde = { version = "1", features = ["derive"] }
-serde_json = "1.0"
-actix-web = "4"
-actix = "0.13.0"
-futures = "0.3"
-log = "0.4.17"
-chrono = "0.4"
