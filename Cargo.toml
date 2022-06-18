@@ -1,5 +1,5 @@
 [package]
-name = "summer-ipfs-demo"
+name = "covid-ipfs"
 version = "0.1.0"
 edition = "2021"
 authors = [
