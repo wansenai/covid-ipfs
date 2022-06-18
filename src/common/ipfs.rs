@@ -1,6 +1,8 @@
-use summer_ipfs_client::IpfsApi;
+use ipfs_api_backend_actix::{IpfsClient, TryFromUri};
 
-fn coon() -> IpfsApi{
-    let api = IpfsApi::new("101.43.52.162", 5001);
-    api
+pub fn coon() -> IpfsClient{
+
+    let client = IpfsClient::from_str("http://101.43.52.162:5001").unwrap();
+
+    client
 }
