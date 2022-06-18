@@ -33,9 +33,12 @@ POST /nucleic/save
 
 ```json
 {
-  "name": "赵伟",
-  "date": "2022-05-29",
-  "result": "阴性"
+    "name": "法外狂徒张三",
+    "sex": 1,
+    "phone": "18618532043",
+    "address": "青海省荆州市麦积区",
+    "date": "1977-02-17",
+    "result": "POSITIVE"
 }
 ```
 
