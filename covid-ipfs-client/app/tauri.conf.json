@@ -1,10 +1,10 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "",
-    "beforeDevCommand": "",
-    "devPath": "../src",
-    "distDir": "../src"
+    "distDir": "../build",
+    "devPath": "http://localhost:3000",
+    "beforeDevCommand": "npm run start",
+    "beforeBuildCommand": "npm run build"
   },
   "package": {
     "productName": "client",
@@ -12,16 +12,20 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "http": {
+        "all": true,
+        "request": true
+      }
     },
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
       "deb": {
         "depends": []
       },
       "externalBin": [],
+      "copyright": "James Zow",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -29,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.covidipfs.app",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -56,10 +60,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
-        "resizable": true,
+        "height": 700,
+        "resizable": false,
         "title": "Covid IPFS",
-        "width": 800
+        "width": 850
       }
     ]
   }

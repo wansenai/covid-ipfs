@@ -1,12 +1,39 @@
 {
   "name": "client",
   "scripts": {
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.0.1"
+    "@ant-design/pro-components": "^1.1.6",
+    "@tauri-apps/api": "^1.0.1",
+    "antd": "^4.21.3",
+    "axios": "^0.27.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

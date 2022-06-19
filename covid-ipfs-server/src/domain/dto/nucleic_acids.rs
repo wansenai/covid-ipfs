@@ -13,7 +13,7 @@ pub struct NucleicAcidsDto {
     // 性别 0-女 1-男
     pub sex: Option<u8>,
     // 电话
-    pub phone: Option<String>,
+    pub phone: Option<u64>,
     // 住址
     pub address: Option<String>,
     // 时间
@@ -28,7 +28,7 @@ impl NucleicAcidsDto {
         NucleicAcidsDto {
             name: self.name.clone(),
             sex: self.sex,
-            phone: self.phone.clone(),
+            phone: self.phone,
             address: self.address.clone(),
             date: self.date.clone(),
             result: self.result.clone(),
