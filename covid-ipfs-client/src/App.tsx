@@ -44,7 +44,7 @@ const App: FC = () => {
 
           // axios request api
           axios({
-            url:'http://101.43.52.162:8082/nucleic/save',
+            url:'http://127.0.0.1:8082/nucleic/save',
             headers: {
               'Content-Type': 'application/json'
             },
